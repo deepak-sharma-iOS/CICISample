@@ -13,9 +13,12 @@
 		AED688AD2833B3880092413E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED688AB2833B3880092413E /* Main.storyboard */; };
 		AED688AF2833B3890092413E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED688AE2833B3890092413E /* Assets.xcassets */; };
 		AED688B22833B3890092413E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED688B02833B3890092413E /* LaunchScreen.storyboard */; };
+		C2E07C6C7D9FE7E311708057 /* Pods_CICDSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DCE95B564494DA8210FF52 /* Pods_CICDSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B0E4833D9C2E96579A813CA /* Pods-CICDSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CICDSample.release.xcconfig"; path = "Target Support Files/Pods-CICDSample/Pods-CICDSample.release.xcconfig"; sourceTree = "<group>"; };
+		76DCE95B564494DA8210FF52 /* Pods_CICDSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CICDSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED688A22833B3880092413E /* CICDSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CICDSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED688A52833B3880092413E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AED688A72833B3880092413E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		AED688AE2833B3890092413E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AED688B12833B3890092413E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AED688B32833B3890092413E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD3221A02D4293EDECFB994 /* Pods-CICDSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CICDSample.debug.xcconfig"; path = "Target Support Files/Pods-CICDSample/Pods-CICDSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E07C6C7D9FE7E311708057 /* Pods_CICDSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		088E670E20BBB20D912327C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76DCE95B564494DA8210FF52 /* Pods_CICDSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4078CD8C3FAA3D765AAA0F7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDD3221A02D4293EDECFB994 /* Pods-CICDSample.debug.xcconfig */,
+				3B0E4833D9C2E96579A813CA /* Pods-CICDSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AED688992833B3880092413E = {
 			isa = PBXGroup;
 			children = (
 				AED688A42833B3880092413E /* CICDSample */,
 				AED688A32833B3880092413E /* Products */,
+				4078CD8C3FAA3D765AAA0F7E /* Pods */,
+				088E670E20BBB20D912327C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AED688B62833B3890092413E /* Build configuration list for PBXNativeTarget "CICDSample" */;
 			buildPhases = (
+				DFFFF339489DA937C2A33FD0 /* [CP] Check Pods Manifest.lock */,
 				AED6889E2833B3880092413E /* Sources */,
 				AED6889F2833B3880092413E /* Frameworks */,
 				AED688A02833B3880092413E /* Resources */,
@@ -132,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFFFF339489DA937C2A33FD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CICDSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AED6889E2833B3880092413E /* Sources */ = {
@@ -284,11 +334,14 @@
 		};
 		AED688B72833B3890092413E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDD3221A02D4293EDECFB994 /* Pods-CICDSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = 8SZ27954MH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CICDSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,8 +354,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = e.CICDSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.gitdemocicd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 17th_May_2022_Dist_Certificates;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,11 +365,14 @@
 		};
 		AED688B82833B3890092413E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0E4833D9C2E96579A813CA /* Pods-CICDSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 10;
+				DEVELOPMENT_TEAM = 8SZ27954MH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CICDSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,8 +385,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = e.CICDSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.gitdemocicd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = 17th_May_2022_Dist_Certificates;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -31,9 +31,9 @@ jobs:
       - name: Build Archive
         uses: yukiarrr/ios-build-action@v1.5.0
         with:
-          project-path: TestingCi.xcodeproj
-          workspace-path: TestingCi.xcworkspace # optional
-          scheme: TestingCi
+          project-path: CICDSample.xcodeproj
+          workspace-path: CICDSample.xcworkspace # optional
+          scheme: CICDSample
           configuration: Release
           export-method: app-store
           p12-key-base64: ${{ secrets.P12_KEY_BASE64 }}
