@@ -21,7 +21,7 @@ jobs:
       - name: Build Clean
         run: |
           echo "Your Build Folder is Cleaning"
-          xcodebuild clean -project CICDSample.xcodeproj -scheme CICDSample | xcpretty
+          xcodebuild clean -project CICDSample.xcworkspace -scheme CICDSample | xcpretty
           
       - name: Build Test
         run: |
